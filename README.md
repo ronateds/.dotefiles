@@ -1,3 +1,3 @@
-# dotefiles
+# dotfiles
 
-My dotefiles for arch linux
+My dotfiles for arch linux
