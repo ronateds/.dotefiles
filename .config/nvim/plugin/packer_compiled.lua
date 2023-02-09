@@ -176,6 +176,12 @@ _G.packer_plugins = {
     path = "/home/ronate/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["twilight.nvim"] = {
+    config = { "\27LJ\2\nâ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vexpand\1\5\0\0\rfunction\vmethod\ntable\17if_statement\1\0\2\15treesitter\2\fcontext\3\3\nsetup\rtwilight\frequire\0" },
+    loaded = true,
+    path = "/home/ronate/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/home/ronate/.local/share/nvim/site/pack/packer/start/undotree",
@@ -185,6 +191,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ronate/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["zen-mode.nvim"] = {
+    config = { "\27LJ\2\n¿\2\0\0\5\0\17\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\5\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\16\2B\0\2\1K\0\1\0\fplugins\ttmux\1\0\1\fenabled\1\rgitsigns\1\0\1\fenabled\1\rtwilight\1\0\1\fenabled\2\1\0\0\1\0\3\fenabled\2\nruler\1\fshowcmd\1\vwindow\1\0\0\foptions\1\0\5\19relativenumber\1\15cursorline\1\vnumber\1\15signcolumn\ano\twrap\2\1\0\3\vheight\3\1\nwidth\3P\rbackdrop\3\0\nsetup\rzen-mode\frequire\0" },
+    loaded = true,
+    path = "/home/ronate/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
@@ -193,6 +205,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: zen-mode.nvim
+time([[Config for zen-mode.nvim]], true)
+try_loadstring("\27LJ\2\n¿\2\0\0\5\0\17\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\3\0005\4\4\0=\4\5\3=\3\a\0025\3\t\0005\4\b\0=\4\5\0035\4\n\0=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\16\2B\0\2\1K\0\1\0\fplugins\ttmux\1\0\1\fenabled\1\rgitsigns\1\0\1\fenabled\1\rtwilight\1\0\1\fenabled\2\1\0\0\1\0\3\fenabled\2\nruler\1\fshowcmd\1\vwindow\1\0\0\foptions\1\0\5\19relativenumber\1\15cursorline\1\vnumber\1\15signcolumn\ano\twrap\2\1\0\3\vheight\3\1\nwidth\3P\rbackdrop\3\0\nsetup\rzen-mode\frequire\0", "config", "zen-mode.nvim")
+time([[Config for zen-mode.nvim]], false)
+-- Config for: twilight.nvim
+time([[Config for twilight.nvim]], true)
+try_loadstring("\27LJ\2\nâ\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vexpand\1\5\0\0\rfunction\vmethod\ntable\17if_statement\1\0\2\15treesitter\2\fcontext\3\3\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
+time([[Config for twilight.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

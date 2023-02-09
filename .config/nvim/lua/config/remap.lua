@@ -40,3 +40,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+--move in wrapped lines
+vim.keymap.set("n", "j", "gj")
+vim.keymap.set("n", "k", "gk")
+vim.keymap.set("n", "gj", "j")
+vim.keymap.set("n", "gk", "k")

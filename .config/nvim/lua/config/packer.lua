@@ -21,11 +21,13 @@ return require('packer').startup(function(use)
 	  end
   })
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use('theprimeagen/harpoon')
-  use('mbbill/undotree')
-  use('tpope/vim-fugitive')
+  -- status bar
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
+  -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
@@ -48,10 +50,10 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  -- status bar
-  use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-}
-
+  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use('theprimeagen/harpoon')
+  use('mbbill/undotree')
+  use('tpope/vim-fugitive')
+  use('folke/zen-mode.nvim')
+  use('folke/twilight.nvim')
 end)
