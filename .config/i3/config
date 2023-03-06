@@ -211,6 +211,10 @@ exec_always setxkbmap br
 # Set Wallpaper
 exec_always feh --bg-fill /home/ronate/Pictures/bg.jpg
 
+#exec notion-app
+# exec alacritty --hold -e gh status &
+#exec alacritty -e $SHELL -c "gh status && exec $SHELL" &
+
 # Keybind for i3lock
 bindsym $mod2+l exec i3lock
 
@@ -225,5 +229,10 @@ exec --no-startup-id dunst
 
 # Programs shortcuts
 bindsym $mod2+f exec firefox
+bindsym $mod2+w exec chromium
 bindsym $mod2+p exec firefox --private-window
 bindsym $mod2+b exec blender
+bindsym $mod2+n exec notion-app
+
+# Assign Workspaces:
+#assign [class="firefox"] $ws2
