@@ -23,4 +23,4 @@ export PATH=$PATH:$HOME/.local/bin
 # starship prompt
 eval "$(starship init bash)"
 
-source /usr/share/nvm/init-nvm.sh
+#source /usr/share/nvm/init-nvm.sh
